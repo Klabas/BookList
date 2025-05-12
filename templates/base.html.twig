@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Book List{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css">
+</head>
+<body class="p-4">
+<nav class="mb-4">
+    <a href="{{ path('book_index') }}" class="btn btn-primary">Home</a>
+    <a href="{{ path('book_new') }}" class="btn btn-success">Add New Book</a>
+</nav>
+<div class="container">
+    {% block body %}{% endblock %}
+</div>
+</body>
+</html>
